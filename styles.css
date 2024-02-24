@@ -1,103 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 .caixa {
-    width: 100%;
-    height: 30vh;
-    background-color: black;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: coluna;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
-.lista{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-
-    list-style:square;
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: square;
 }
 
-.header{
-    background-color: black;
-    padding: 30px;
-    
+.lista li {
+  font-size: 1.2em;
+}
+
+.header {
+  background-color: black;
+  padding: 30px;
 }
 
 
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.coluna {
+  display: flex;
+  flex-wrap: wrap; 
+}
 
 
-   
-  .side {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f1f1f1;
-    padding: 10px; 
-    text-decoration: none;
-    display: inline-block;
-    font-size: xx-large;
-  }
+.topo {
+  width: 100%;  
+  display: flex;
+  flex-direction: coluna;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-decoration: none;
   
-  .barra_nav{
-    text-decoration: none;
-    color: rgb(8, 8, 8);
-    padding: 5vh;
-    text-decoration: none;
-  }
- 
-  .barra_nav_il{
-    display: inline-block
-  
-  }
+}
 
-  .barra_nav_il :hover{
-    color: blue;
 
-  }
-  .main {
-    flex: 70%; 
-    background-color: white; 
-    padding: 20px; 
-    font-size: 4vh ;
-  }
-  p{
-    font-size: large;
-  }
+.barra_nav {
+  color: rgb(8, 8, 8);
+  padding: 5px;  
+}
 
+.barra_nav_ul {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;  
+  padding: 0; 
   
-@media screen and (max-width: 700px) {
-    .row {
-      flex-direction: column;
-    }
-  }
-  
-  
-  @media screen and (max-width: 400px) {
-    .barra_nav a {
-      flex-direction: row;
-      float: none;
-      width: 100%;
-    }
-  }
+}
 
-  .sublista{
-    font-size: large;
-    padding-left: 5dvh;
-  }
+.barra_nav_il {
+  text-align: center;
+  margin: 5px;
+  list-style: none;
+}
+
+/*eu quis fazer um negócio legal da barra de navegação mudar de cor quando passa o mouse por cima. pesquisei, pesquisei e não conseguir fazer dar certo no meu computador, mas deixei no código como uma tentativa que foi feita.*/
+.barra_nav_ul .barra_nav_il:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  
+}
+
+
+.sublista {
+  font-size: medium;
+  padding-left: 5vw; 
+}
+
