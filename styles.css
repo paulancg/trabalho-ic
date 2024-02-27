@@ -11,9 +11,9 @@
   background-color: black;
   color: whitesmoke;
   display: flex;
-  flex-direction: coluna;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 
@@ -30,7 +30,7 @@
 
 .header {
   background-color: black;
-  padding: 30px;
+  padding: 5vw;
 }
 
 
@@ -47,7 +47,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: #f1f1f1;
-  padding: 10px;
+  padding: 1vw;
   text-decoration: none;
   
 }
@@ -55,7 +55,7 @@
 
 .barra_nav {
   color: rgb(8, 8, 8);
-  padding: 5px;  
+  padding: 1vw;  
 }
 
 .barra_nav_ul {
@@ -71,12 +71,12 @@
 
 .barra_nav_il {
   text-align: center;
-  margin: 5px;
+  margin: 1vw;
   list-style: none;
 }
 
-/*eu quis fazer um negócio legal da barra de navegação mudar de cor quando passa o mouse por cima. pesquisei, pesquisei e não conseguir fazer dar certo no meu computador, mas deixei no código como uma tentativa que foi feita.*/
-.barra_nav_ul .barra_nav_il:hover {
+
+.barra_nav:hover {
   color: blue;
   text-decoration: none;
 }
@@ -85,7 +85,9 @@
 .main {
   flex: 70%;
   background-color: white;
-  padding: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 2vw;
   
 }
 
